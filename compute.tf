@@ -18,8 +18,8 @@ resource "azurerm_virtual_machine" "main" {
   storage_os_disk {
     name              = "${var.environment}-${var.compute_name}-${var.region}-vm-osdisk1"
     caching           = "${var.storage_os_disk_caching}"
-    create_option     = "${var.storage_os_disk_create_option}"
-    managed_disk_type = "${var.storage_os_disk_managed_disk_type}"
+    create_option     = "${var.storage_os_create_option}"
+    managed_disk_type = "${var.storage_os_managed_disk_type}"
     disk_size_gb      = "${var.storage_os_disk_disk_size_gb}"
   }
 
