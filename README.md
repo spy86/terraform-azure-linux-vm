@@ -68,7 +68,7 @@ No modules.
 ```
 module "linux-vm" {
   source  = "spy86/linux-vm/azure"
-  version = "1.0.0"
+  version = "1.0.3"
   compute_name = "a448379c"
   compute_size = "Standard_B2ms"
   compute_ssh_pub_key = "ssh-rsa ....."
