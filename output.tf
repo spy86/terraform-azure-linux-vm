@@ -1,6 +1,6 @@
 output "vm_ids" {
   description = "Virtual machine ids created."
-  value       = "${zurerm_virtual_machine.compute.*.id}"
+  value       = "${azurerm_virtual_machine.compute.*.id}"
   sensitive = false
 }
 output "network_interface_ids" {
