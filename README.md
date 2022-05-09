@@ -66,9 +66,13 @@ No modules.
 ## How to use
 
 ```
+provider "azurerm" {
+features {}
+}
+
 module "linux-vm" {
   source  = "spy86/linux-vm/azure"
-  version = "1.0.3"
+  version = "1.0.4"
   compute_name = "a448379c"
   compute_size = "Standard_B2ms"
   compute_ssh_pub_key = "ssh-rsa ....."
